@@ -1,0 +1,50 @@
+@import url(Reset.css);
+@import url(Global.css);
+@import url(objects.css);
+
+.s-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.s-wrapper .s-left-column {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.s-wrapper .s-main-content {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    padding-left: 130px;
+}
+
+.s-wrapper .s-main-content__top{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.s-wrapper .s-main-content__bottom{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.s-wrapper .s-main-content .s-logo img{
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
