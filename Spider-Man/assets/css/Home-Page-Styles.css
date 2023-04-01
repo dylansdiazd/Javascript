@@ -15,6 +15,7 @@ body::before{
     height: 100%;
     position: absolute;
     opacity: 0.2;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .s-menu{
@@ -57,13 +58,15 @@ body::before{
     object-fit: cover;
     position: absolute;
     opacity: 1;
+    transition: 1s;
 }
 
 .s-card__image{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    position:relative
+    position:relative;
+    transition: 1s;
 }
 
 .s-card__title{
@@ -73,6 +76,7 @@ body::before{
     position: absolute;
     width: 100%;
     bottom: 0 ;
+    transition: bottom 1s ease-in-out;
 }
 
 .s-controller{
@@ -115,4 +119,35 @@ body::before{
     width: 50%;
     height: 2px;
     position: absolute;
+}
+
+
+
+.s-card--hovered .s-card__background{
+    cursor: pointer;
+    opacity: 0;
+}
+
+.s-card--hovered .s-card__image{
+    transform: scale(1.4);
+}
+
+body#spider-man-01-hovered::before{
+    background-image: url('/assets/images/pic-sm-bg-01.jpg');
+}
+
+body#spider-man-02-hovered::before{
+    background-image: url('/assets/images/pic-sm-bg-02.jpg');
+}
+
+body#spider-man-03-hovered::before{
+    background-image: url('/assets/images/pic-sm-bg-03.jpg');
+}
+
+body[id^="spider-man-"]::before{
+    opacity: 1;
+}
+
+.s-card--hovered .s-card__title{
+    bottom: 50%;
 }
