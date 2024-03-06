@@ -1,0 +1,26 @@
+.form{
+    width: 18%;
+    margin: auto;
+    background-color: rgb(164, 13, 252);
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    padding: 0  ;
+    margin: 0;
+}
+
+input{
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 0;
+}
